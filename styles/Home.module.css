@@ -1,0 +1,32 @@
+/* 
+  This file can be used for any component-specific styles that 
+  might be difficult to achieve with Tailwind alone.
+  
+  Since we're using Tailwind for most styling in this project,
+  this file is mostly empty. You can add custom styles here if needed.
+*/
+
+.chatContainer {
+    /* Any custom styles for the chat container that can't be achieved with Tailwind */
+  }
+  
+  .messageAnimation {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 
+    Note: For most styling needs, you should use Tailwind utility classes 
+    directly in your JSX. Only use CSS modules for complex animations or 
+    styles that can't be expressed through Tailwind.
+  */
